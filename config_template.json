@@ -1,0 +1,46 @@
+{
+  "app_config": {
+    "version": "1.0.0",
+    "build_type": "debug"
+  },
+  "api_config": {
+    "base_url": "https://api.byd.com/v1/",
+    "timeout_seconds": 30,
+    "retry_count": 3,
+    "retry_delay_ms": 1000
+  },
+  "bluetooth_config": {
+    "scan_interval_ms": 5000,
+    "rssi_update_interval_ms": 2000,
+    "connection_timeout_ms": 10000,
+    "reconnect_attempts": 3
+  },
+  "car_control_config": {
+    "unlock_threshold_dbm": -60,
+    "lock_threshold_dbm": -80,
+    "unlock_delay_ms": 2000,
+    "lock_delay_ms": 5000,
+    "auto_unlock_enabled": true,
+    "auto_lock_enabled": true,
+    "hysteresis_dbm": 5
+  },
+  "security_config": {
+    "encrypted_storage": true,
+    "token_refresh_buffer_minutes": 30,
+    "max_failed_attempts": 5,
+    "lockout_duration_minutes": 15
+  },
+  "ui_config": {
+    "theme": "auto",
+    "language": "zh_CN",
+    "notifications_enabled": true,
+    "vibration_enabled": true,
+    "sound_enabled": false
+  },
+  "debug_config": {
+    "logging_enabled": true,
+    "detailed_logs": false,
+    "mock_api_responses": false,
+    "test_mode": false
+  }
+}
